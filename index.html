@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>IPSphere - our gateway to detailed IP address information</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <script src='js/index.js'></script>
+</head>
+
+<body>
+    <div class="get">
+        <div class="heading">
+            <div class="name">
+                <p>Get Ip info</p>
+            </div>
+            <div class="sid">
+                <p>&#9776;</p>
+            </div>
+        </div>
+        <div class="ip">
+            <input type="text" placeholder="enter IP address">
+            <button onclick="getIp()">Get Info</button>
+        </div>
+        <div id="res" class="result">
+            <div class="head">
+                <p>Result:</p>
+            </div>
+            <p style="text-align: center;" id="error"></p>
+            <div class="thisresult">
+                <div class="resside">
+                    <p id="pars"></p>
+                </div>
+
+                <div class="this">
+                    <p id="respi"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p id="hey">@chukwunonso prosper </p>
+        </div>
+        <script>
+            let ye = new Date()
+            let year = ye.getFullYear()
+            document.querySelector('#hey').innerHTML += year;
+        </script>
+
+    </div>
+</body>
+
+</html>
