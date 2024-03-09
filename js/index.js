@@ -31,3 +31,19 @@ async function getIp() {
         }
     }
 }
+
+function pastlocation() {
+    async function getIp() {
+        let url = 'https://ipinfo.io/json';
+        try {
+            let response = await fetch(url);
+            let result = await response.text()
+            let parse = JSON.parse(result);
+            let ip = parse['ip'];
+            document.querySelector('#iploc').value = ip;
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    getIp()
+}

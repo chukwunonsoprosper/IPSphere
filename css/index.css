@@ -125,12 +125,31 @@ button {
     font-size: smaller;
 }
 
+.yourip {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+.yourip img {
+    width: 20px;
+    height: 20px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
 @media screen and (max-width: 600px) {
     .get {
         height: 99%;
         width: 98%;
     }
     .thisresult {
-        height: 550px;
+        height: 300px;
     }
 }

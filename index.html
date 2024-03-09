@@ -7,7 +7,7 @@
     <title>IPsphere - your gateway to detailed IP address information</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6195/6195691.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images.jpg" type="image/x-icon">
     <script src='js/index.js'></script>
     <script src="js/service-worker.js"></script>
     <link rel="manifest" href="manifest.json" />
@@ -25,10 +25,12 @@
             </div>
             <div class="sid">
                 <p>&#9776;</p>
+
             </div>
+
         </div>
         <div class="ip">
-            <input type="text" placeholder="enter IP address">
+            <input id="iploc" type="text" placeholder="enter IP address">
             <button onclick="getIp()">Get Info</button>
         </div>
         <div id="res" class="result">
@@ -55,8 +57,11 @@
             let year = ye.getFullYear()
             document.querySelector('#hey').innerHTML += year;
         </script>
-
+        <div onclick="pastlocation()" class="yourip">
+            <img src="search-location.svg" alt="">
+        </div>
     </div>
+
 </body>
 
 </html>
