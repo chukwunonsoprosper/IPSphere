@@ -23,8 +23,8 @@ async function getIp() {
             const result = await response.text();
             let parse = JSON.parse(result);
             for (var key in parse) {
-                document.getElementById('pars').innerHTML += key + ":" + "<br>";
-                document.getElementById('respi').innerHTML += parse[key] + "<br>";
+                document.getElementById('pars').innerHTML += key + ":" + "<br><br>";
+                document.getElementById('respi').innerHTML += parse[key] + "<br><br>";
             }
         } catch (error) {
             document.getElementById('error').innerHTML = error.message;
