@@ -2,6 +2,10 @@ body {
     background-color: white;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 .get {
     position: absolute;
     padding: 10px;
