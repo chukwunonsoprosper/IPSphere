@@ -27,7 +27,7 @@ async function getIp() {
                 document.getElementById('respi').innerHTML += parse[key] + "<br>";
             }
         } catch (error) {
-            document.getElementById('error').innerHTML = error;
+            document.getElementById('error').innerHTML = error.message;
         }
     }
 }
