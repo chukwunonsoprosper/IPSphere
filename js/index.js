@@ -23,27 +23,27 @@ async function getIp() {
             const result = await response.text();
             let parse = JSON.parse(result);
             for (var key in parse) {
-                document.getElementById('pars').innerHTML += key + ":" + "<br><br>";
-                document.getElementById('respi').innerHTML += parse[key] + "<br><br>";
+                document.getElementById("pars").innerHTML += key + ":" + "<br><br>";
+                document.getElementById("respi").innerHTML += parse[key] + "<br><br>";
             }
         } catch (error) {
-            document.getElementById('error').innerHTML = error.message;
+            document.getElementById("error").innerHTML = error.message;
         }
     }
 }
 
 function pastlocation() {
     async function getIp() {
-        let url = 'https://ipinfo.io/json';
+        let url = "https://ipinfo.io/json";
         try {
             let response = await fetch(url);
-            let result = await response.text()
+            let result = await response.text();
             let parse = JSON.parse(result);
-            let ip = parse['ip'];
-            document.querySelector('#iploc').value = ip;
+            let ip = parse["ip"];
+            document.querySelector("#iploc").value = ip;
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
     }
-    getIp()
+    getIp();
 }

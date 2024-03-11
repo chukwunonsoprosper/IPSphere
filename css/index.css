@@ -1,5 +1,8 @@
 body {
     background-color: white;
+    -webkit-user-select: none;
+    user-select: none;
+    user-zoom: unset;
 }
 
 ::-webkit-scrollbar {
@@ -27,8 +30,9 @@ body {
     box-sizing: border-box;
     background-color: #181818;
     color: white;
-    width: 99%;
+    width: 97%;
     margin: auto;
+    margin-top: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
 }
@@ -50,20 +54,20 @@ body {
 
 .ip input,
 button {
-    padding: 10px 20px;
+    padding: 20px 10px;
     border: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     outline: none;
 }
 
 .ip input {
-    width: 80%;
+    width: 70%;
     border-radius: 8px 0px 0px 8px;
     color: black;
 }
 
 .ip button {
-    width: 20%;
+    width: 30%;
     background-color: darkgreen;
     border-radius: 0px 8px 8px 0px;
     cursor: pointer;
@@ -72,13 +76,15 @@ button {
 }
 
 .ip button:hover {
-    background-color: rgb(2, 88, 2);
+    background-color: rgb(2, 68, 2);
 }
 
 .result {
-    padding: 10px;
+    padding: 5px;
     color: white;
-    width: 99%;
+    width: 98%;
+    height: 65%;
+    box-sizing: border-box;
     margin: auto;
     display: none;
     overflow: auto;
@@ -86,9 +92,10 @@ button {
 }
 
 .result .head {
-    padding: 1px 10px;
+    position: fixed;
     background-color: #181818;
     width: 60px;
+    padding: 1px 15px;
     text-align: center;
     border-radius: 10px;
 }
@@ -137,26 +144,31 @@ button {
 }
 
 .yourip img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 10px 10px;
     background-color: white;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-radius: 15px;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 @media screen and (max-width: 600px) {
     .get {
-        height: 99%;
-        width: 98%;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: unset;
+        border-radius: unset;
     }
     .thisresult {
         height: 520px;
-            overflow: auto;
-            overflow-y: scroll;
-
+        overflow: auto;
+        overflow-y: scroll;
+    }
+    .result {
+        top: 0;
+        height: 70%;
     }
 }

@@ -2,22 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>IPsphere - your gateway to detailed IP address information</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
-    <link rel="shortcut icon" href="images.jpg" type="image/x-icon">
-    <script src='js/index.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <link rel="shortcut icon" href="images.jpg" type="image/x-icon" />
+    <script src="js/index.js"></script>
     <script src="js/service-worker.js"></script>
     <link rel="manifest" href="manifest.json" />
-
 </head>
 
 <body>
-    <img src="images.jpg" style="display: none;" alt="">
-    <p style="display: none;">IPsphere is a powerful and user-friendly tool designed to provide comprehensive information about any given IP address. Whether you're an IT professional, a developer, or simply curious, IPSphere empowers you to uncover valuable details about IP addresses,
-        including their associated country and additional data.</p>
+    <img src="images.jpg" style="display: none" alt="" />
+    <p style="display: none">
+        IPsphere is a powerful and user-friendly tool designed to provide comprehensive information about any given IP address. Whether you're an IT professional, a developer, or simply curious, IPSphere empowers you to uncover valuable details about IP addresses,
+        including their associated country and additional data.
+    </p>
     <div class="get">
         <div class="heading">
             <div class="name">
@@ -25,43 +26,38 @@
             </div>
             <div class="sid">
                 <p>&#9776;</p>
-
             </div>
-
         </div>
         <div class="ip">
-            <input id="iploc" type="text" placeholder="enter IP address">
+            <input id="iploc" type="text" placeholder="Enter IP address" />
             <button onclick="getIp()">Get Info</button>
         </div>
         <div id="res" class="result">
             <div class="head">
                 <p>Result:</p>
             </div>
-            <p style="text-align: center;" id="error"></p>
+            <p style="text-align: center; margin-top: 100px;" id="error"></p>
             <div class="thisresult">
                 <div class="resside">
                     <p id="pars"></p>
                 </div>
-
                 <div class="this">
                     <p id="respi"></p>
                 </div>
             </div>
         </div>
-
         <div class="copyright">
             <p id="hey">@IPsphere </p>
         </div>
         <script>
-            let ye = new Date()
-            let year = ye.getFullYear()
-            document.querySelector('#hey').innerHTML += year;
+            let ye = new Date();
+            let year = ye.getFullYear();
+            document.querySelector("#hey").innerHTML += year;
         </script>
         <div onclick="pastlocation()" class="yourip">
-            <img src="search-location.svg" alt="">
+            <img src="search-location.svg" alt="" />
         </div>
     </div>
-
 </body>
 
 </html>
