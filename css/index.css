@@ -61,13 +61,13 @@ button {
 }
 
 .ip input {
-    width: 70%;
+    width: 75%;
     border-radius: 8px 0px 0px 8px;
     color: black;
 }
 
 .ip button {
-    width: 30%;
+    width: 25%;
     background-color: #006400;
     border-radius: 0px 8px 8px 0px;
     cursor: pointer;
