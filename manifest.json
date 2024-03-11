@@ -1,14 +1,14 @@
 {
     "name": "Ipsphere",
-    "short_name": "iPshere",
+    "short_name": "IPshere",
     "description": "IPSphere is a powerful and user-friendly tool designed to provide comprehensive information about any given IP address. ",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "background_color": "#141414",
+    "theme_color": "#006400",
     "icons": [{
         "src": "https://cdn-icons-png.flaticon.com/512/6195/6195691.png",
-        "sizes": "182x182",
+        "sizes": "122x122",
         "type": "image/png"
     }]
 }

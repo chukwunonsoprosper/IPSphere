@@ -8,7 +8,7 @@ if ('serviceWorker' in navigator) {
         });
 }
 
-const cacheName = 'your-pwa-cache-v1';
+const cacheName = 'IPsphere-v1';
 
 self.addEventListener('install', event => {
     event.waitUntil(
@@ -17,8 +17,8 @@ self.addEventListener('install', event => {
                 '/',
                 'index.html',
                 'css/index.css',
-                'js/index.js',
-                // Add more paths to cache as needed
+                'js/index.js'
+
             ]);
         })
     );
